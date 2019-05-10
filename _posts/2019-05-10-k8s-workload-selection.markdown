@@ -9,7 +9,13 @@ categories: jekyll update
 ## deployment[无状态应用]
 ![](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/assets/img/Deployment.png)
 
+![](../img/jekyll/Deployment.png)
+
 ## statefulset[有状态应用]
+
+https://kubernetes.io/docs/tasks/run-application/run-single-instance-stateful-application/
+
+
 ## job & cronJob[批处理作业]
 ## deamonsets[守护进程]
 
