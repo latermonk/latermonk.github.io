@@ -18,5 +18,7 @@ categories: jekyll update
 ### 2
 ![Deployment](../assets/img/Deployment.png)
 
+![](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/assets/img/Deployment.png)
+
 
 
