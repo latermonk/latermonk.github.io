@@ -7,19 +7,13 @@ categories: jekyll update
 # 4 kind of k8s workload:
 
 ## deployment[无状态应用]
+![](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/assets/img/Deployment.png)
 
 ## statefulset[有状态应用]
 ## job & cronJob[批处理作业]
 ## deamonsets[守护进程]
 
-### 1
-![Deployment](Deployment.png)
 
-### 2
-![Deployment](../assets/img/Deployment.png)
 
-![](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/assets/img/Deployment.png)
 
-### 3
 
-![Deployment](../media/Deployment.png)
