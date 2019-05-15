@@ -5,7 +5,7 @@ title:  "install kind for cka exam on ubuntu 18.04"
 categories: jekyll update
 ---
 
-#kind for cka exam
+# kind for cka exam
 
 ## install docker
 
