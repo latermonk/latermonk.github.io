@@ -63,3 +63,43 @@ wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/
 kind create cluster --config kind-example-config.yaml
 ```
 
+## Test the cluster 
+
+
+```
+kubectl cluster-info 
+```
+
+
+```
+kubectl run nginx --image=nginx 
+```
+
+## config completion
+
+
+```
+apt install bash-completion
+```
+
+```
+vim ~/.bashrc
+
+add:
+
+source <(kubectl completion bash)
+
+
+```
+
+
+```
+
+vim ~/.bashrc
+add:
+
+
+alias k=kubectl
+complete -F __start_kubectl k
+```
+
