@@ -68,6 +68,10 @@ kind create cluster --config kind-example-config.yaml
 
 ```
 kubectl cluster-info 
+
+
+kubectl get cs [componentstatuses]
+
 ```
 
 
