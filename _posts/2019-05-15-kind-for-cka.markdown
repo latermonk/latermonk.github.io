@@ -50,6 +50,8 @@ chmod +x  ~/go/kind
 ```
 
 ```
+download config file
+
 wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
 ```
 
