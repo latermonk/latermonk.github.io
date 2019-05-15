@@ -42,10 +42,11 @@ source ~/.bashrc
 ```
 wget   https://github.com/kubernetes-sigs/kind/releases/download/0.2.1/kind-linux-amd64
 
+mkdir -p $HOME/go/bin
 
-mv  ./kind-linux-amd64    ~/go/kind
+mv  ./kind-linux-amd64    ~/go/bin/kind
 
-chmod +x  ~/go/kind
+chmod +x   ~/go/bin/kind
 
 ```
 
