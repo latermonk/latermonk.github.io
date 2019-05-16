@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CKAD-exercises Notes -1"
+title:  "CKAD-exercises Notes -1 Core Concepts"
 
 categories: jekyll update
 ---
