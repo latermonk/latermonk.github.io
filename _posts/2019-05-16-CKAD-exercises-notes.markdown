@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "CKAD-exercises Notes"
+title:  "CKAD-exercises Notes -1"
 
 categories: jekyll update
 ---
 
-# CKAD-exercises Notes
+# CKAD-exercises Notes 1
 
 
 ## Delete all resource at one time 
@@ -162,5 +162,63 @@ k run busybox --image=busybox --restart=Never --command -- env --dry-run -o yaml
 否则，不是去产生YAML文件，而是直接去创建了Pod !!!
 
 
+## et the YAML for a new ResourceQuota called 'myrq' without creating it
 
+
+```
+kubectl create quota myrq --hard=cpu=1,memory=1G,pods=2 --dry-run -o yaml
+```
+
+
+## Q4 kubectl run 中的port
+
+### hostport 主机端口
+
+The host port mapping for the container port. To demonstrate a single-machine container.
+
+### port   容器端口或者SVC端口
+The port that this container exposes. If --expose is true, this is also the port used by the service that is created.
+
+
+## 查看容器中镜像的版本
+
+```
+kubectl get po nginx -o jsonpath='{.spec.containers[].image}{"\n"}'
+```
+这个路径是怎么产生的？
+
+
+
+
+## Create a busybox pod that echoes 'hello world' and then exits
+
+```
+kubectl run busybox --image=busybox -it --rm --restart=Never -- echo 'hello world'
+
+# or
+
+kubectl run busybox --image=busybox -it --rm --restart=Never -- /bin/sh -c 'echo hello world'
+
+```
+
+## Create an nginx pod and set an env value as 'var1=val1'. Check the env value existence within the pod
+
+
+解法1：
+
+```
+kubectl run nginx --restart=Never --image=nginx --env=var1=val1 -it --rm -- env
+```
+
+
+
+解法2：
+```
+
+kubectl run nginx --image=nginx --restart=Never --env=var1=val1
+# then
+kubectl exec -it nginx -- env
+# or
+kubectl describe po nginx | grep val1
+```
 
