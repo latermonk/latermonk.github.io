@@ -40,6 +40,6 @@ kubectl explain po.spec
 
 
 
-![label-annotations](_images/label-annotations.png)
+![label-annotations](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/label-annotations.png)
 
 
