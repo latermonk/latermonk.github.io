@@ -43,3 +43,103 @@ kubectl explain po.spec
 ![label-annotations](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/label-annotations.png)
 
 
+## Jobs and CronJob
+
+### Create a job with image perl that runs default command with arguments "perl -Mbignum=bpi -wle 'print bpi(2000)'"
+
+```
+k run pi --image=perl --restart=OnFailure   -- /bin/sh -c  "perl -Mbignum=bpi -wle 'print bpi(2000)'"
+```
+
+```
+kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+```
+
+## Q: follow the logs
+
+
+```
+kubectl logs busybox-ptx58 -f
+```
+
+### Create the same job, make it run 5 times, one after the other. Verify its status and delete it
+
+
+```
+kubectl create job busybox --image=busybox --dry-run -o yaml -- /bin/sh -c 'echo hello;sleep 30;echo world' > job.yaml
+vi job.yaml
+```
+## Add job.spec.completions=5
+
+
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    run: busybox
+  name: busybox
+spec:
+  completions: 5 # add this line
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: busybox
+    spec:
+      containers:
+      - args:
+        - /bin/sh
+        - -c
+        - echo hello;sleep 30;echo world
+        image: busybox
+        name: busybox
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+```
+then execute :
+
+```
+kubectl create -f job.yaml
+```
+
+### Create the same job, but make it run 5 parallel times
+
+# job.spec.parallelism=5
+
+
+
+```
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    run: busybox
+  name: busybox
+spec:
+  parallelism: 5 # add this line
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: busybox
+    spec:
+      containers:
+      - args:
+        - /bin/sh
+        - -c
+        - echo hello;sleep 30;echo world
+        image: busybox
+        name: busybox
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+```
+
+
+
+
+
