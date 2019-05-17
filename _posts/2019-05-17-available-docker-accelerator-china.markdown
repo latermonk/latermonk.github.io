@@ -8,10 +8,10 @@ categories: jekyll update
 # available docker accelerator china
 
 
-DaoCloud:
+DaoCloud:    
 https://www.daocloud.io/mirror
 
-Linux:
+Linux:    
 
 ```
 curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://f1361db2.m.daocloud.io
