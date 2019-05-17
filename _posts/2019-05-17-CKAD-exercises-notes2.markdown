@@ -141,5 +141,15 @@ status: {}
 
 
 
+## CronJob
+
+https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
+
+https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/
+
+
+```
+kubectl run busybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster'
+```
 
 
