@@ -8,6 +8,17 @@ categories: jekyll update
 # kubectl skills
 
 
+## important
+
+
+```
+kubectl explain Pod.spec --recursive |less
+```
+
+```
+k explain job.spec --recursive |less
+```
+
 
 ## reference:
 CKAD考试技巧汇总
