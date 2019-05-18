@@ -54,5 +54,5 @@ containers   <[]Object>
 ```
 ## ConfigMaps
 
-![configmap](_images/configmap.png)
+![configmap](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/configmap.png)
 
