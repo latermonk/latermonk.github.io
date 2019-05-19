@@ -10,7 +10,7 @@ categories: jekyll update
 ## install docker
 
 ```
-apt install docker.io
+apt install docker.io -y
 ```
 
 ##  Down kind and cluster config file
