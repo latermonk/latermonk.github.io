@@ -13,38 +13,15 @@ categories: jekyll update
 apt install docker.io
 ```
 
-
-## install golang
-
-```
-apt install golang
-```
-
-### configure golang path
-
-```
-
-mkdir $HOME/go
-
-vim ~/.bashrc
-&& add the following lines:
-
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-source ~/.bashrc
-
-
-```
 ##  Down kind and cluster config file
 
 
 ```
+cd /usr/local/bin
+
 wget   https://github.com/kubernetes-sigs/kind/releases/download/0.2.1/kind-linux-amd64
 
-mkdir -p $HOME/go/bin
-
-mv  ./kind-linux-amd64    ~/go/bin/kind
+mv  kind-linux-amd64   kind
 
 chmod +x   ~/go/bin/kind
 
@@ -54,13 +31,16 @@ chmod +x   ~/go/bin/kind
 download config file
 
 wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
+
 ```
 
 ## Create kind cluster 
 
 
 ```
+
 kind create cluster --config kind-example-config.yaml
+
 ```
 
 ## Test the cluster 
@@ -107,3 +87,28 @@ alias k=kubectl
 complete -F __start_kubectl k
 ```
 
+# backup-content
+
+
+## install golang
+
+```
+apt install golang
+```
+
+### configure golang path
+
+```
+
+mkdir $HOME/go
+
+vim ~/.bashrc
+&& add the following lines:
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+source ~/.bashrc
+
+
+```
