@@ -85,30 +85,7 @@ add:
 
 alias k=kubectl
 complete -F __start_kubectl k
-```
-
-# backup-content
-
-
-## install golang
-
-```
-apt install golang
-```
-
-### configure golang path
 
 ```
 
-mkdir $HOME/go
 
-vim ~/.bashrc
-&& add the following lines:
-
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-source ~/.bashrc
-
-
-```
