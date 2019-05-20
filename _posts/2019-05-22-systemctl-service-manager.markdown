@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Systemd 教程"
+title:  "Systemd Guide"
 
 categories: jekyll update
 ---
