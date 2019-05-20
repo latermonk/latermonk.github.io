@@ -7,6 +7,13 @@ categories: jekyll update
 
 # CKAD-exercises Notes 4
 
+## 困惑
+## 使用 k explain 查询YAML文件格式的时候，经常把层级弄错，有什么办法么？ 
+
+### 层级
+### - 划线
+
+
 
 ```
 k explain pod.spec. --recursive|less
@@ -44,7 +51,40 @@ k explain pod.spec. --recursive|less
 
 ```
 
-### Create a busybox pod that runs 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'. Check its logs
+### 1
+```
+livenessProbe: # our probe
+      exec: # add this line
+        command: # command definition
+        - ls # ls command
+```
+
+### 2
+```
+livenessProbe: 
+      initialDelaySeconds: 5 # add this line
+      periodSeconds: 10 # add this line as well
+      exec:
+        command:
+        - ls
+```
+
+### 3
+```
+readinessProbe: # declare the readiness probe
+      httpGet: # add this line
+        path: / #
+        port: 80 #
+```
+
+
+
+###  Logging
+
+```
+Create a busybox pod that runs 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'. Check its logs
+```
+
 
 
 ```
