@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CKAD-exercises Notes -5  # Services and Networking"
+title:  "CKAD-exercises Notes -5   Services and Networking"
 
 categories: jekyll update
 ---
