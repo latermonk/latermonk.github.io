@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "remote access"
+title:  "Systemd 教程"
 
 categories: jekyll update
 ---
