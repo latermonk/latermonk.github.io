@@ -54,4 +54,32 @@ spec:
 
 ```
 
+# Q1:  pod的YAML内部是如何使用label的？
+
+##  元数据
+
+```
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+
+```
+## label selector
+
+
+```
+yaml文件内部如何表示？
+```
+# YAML crash course
+
+[https://ansilh.com/05-yaml_primer/01-structure/](https://ansilh.com/05-yaml_primer/01-structure/)
+
+
+
+
+
+
+
 
