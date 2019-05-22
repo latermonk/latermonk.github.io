@@ -118,6 +118,47 @@ spec:
 
 ![svc-type](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/svc-type.png)
 
+
+```
+k  get svc nginx -o yaml --export
+```
+
+
+```
+Flag --export has been deprecated, This flag is deprecated and will be removed in future.
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+  selfLink: /api/v1/namespaces/default/services/nginx
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - port: 8964
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
+
+```
+所以访问一个服务有三种办法：
+
+
+
+![access-service](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/access-service.png)
+
+
+
+
+
+
 参考资料：
 [https://vitalflux.com/kubernetes-port-targetport-and-nodeport/](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/)
 
