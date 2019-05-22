@@ -155,12 +155,13 @@ status:
 ![access-service](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/access-service.png)
 
 
-
+#  * * * *  service 这一部分再看一次
 
 
 
 参考资料：
 [https://vitalflux.com/kubernetes-port-targetport-and-nodeport/](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/)
+
 
 
 
