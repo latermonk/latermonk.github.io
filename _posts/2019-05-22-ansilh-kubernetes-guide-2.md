@@ -121,5 +121,7 @@ kubectl label node k8s-worker-01 disktype=ssd  --overwrite
 ```
 Successfully assigned default/nginx to kind-worker-X
 ```
+# taints-and-tolerations
+
 
 
