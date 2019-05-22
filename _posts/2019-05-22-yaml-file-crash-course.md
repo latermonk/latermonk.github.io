@@ -27,7 +27,7 @@ spec:
  k api-resources
 ```
 
-![api-resource](_images/api-resource.png)
+![api-resource](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/api-resource.png)
 
 
 
