@@ -192,8 +192,29 @@ spec:
 ```
 
 
-#### nodePort
-#### port
+#### nodePort 
+#### port  
 #### targetPort
 
+For example:
 
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8170
+    nodePort: 32222
+    protocol: TCP 
+  selector:
+    component: order-service-app
+```
+
+
+![svc-type](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/svc-type.png)
+
+参考资料：
+[https://vitalflux.com/kubernetes-port-targetport-and-nodeport/](https://vitalflux.com/kubernetes-port-targetport-and-nodeport/)
