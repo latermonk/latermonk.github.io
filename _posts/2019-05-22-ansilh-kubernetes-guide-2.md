@@ -44,4 +44,35 @@ k8s@k8s-master-01:~$
 
 ```
 
+# volume basic
+[https://ansilh.com/07-multi_container_pod/02-volumes/](https://ansilh.com/07-multi_container_pod/02-volumes/)
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  volumes:
+  - name: "data"
+    hostPath:
+      path: "/var/data"
+  containers:
+  - image: nginx
+    name: nginx
+    volumeMounts:
+    - name: "data"
+      mountPath: "/usr/share/nginx/html"
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+
+```
+
+# init-container
+
 
