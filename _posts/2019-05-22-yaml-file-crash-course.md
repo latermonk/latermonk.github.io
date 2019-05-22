@@ -175,4 +175,23 @@ spec:
    image: ansilh/demo-coffee
 
 ```
+## Ports in Service Objects
+
+
+## port  in  kubectl 
+
+
+```
+ --port=80 
+
+ --target-port=9090  
+
+ --type=NodePort
+```
+
+
+#### nodePort
+#### port
+#### targetPort
+
 
