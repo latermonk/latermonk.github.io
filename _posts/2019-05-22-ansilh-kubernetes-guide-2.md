@@ -2,16 +2,18 @@
 
 
 ---
+
 layout: post
 title:  " ansilh's k8s guide 2 "
 
 categories: jekyll update
+
 ---
 
+[https://github.com/mhausenblas/kubectl-in-action](https://github.com/mhausenblas/kubectl-in-action)
 
 
 
-# 2
 
 # Multi-Container Pods
 
@@ -74,5 +76,50 @@ status: {}
 ```
 
 # init-container
+
+
+# manual-schedule
+
+```
+kubectl label node k8s-worker-01 disktype=3
+
+```
+
+
+
+
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeSelector:
+    disktype: ssd
+
+```
+
+如果没有可用的node,则提示：
+
+```
+0/4 nodes are available: 4 node(s) didn't match node
+
+```
+
+当修改node: k8s-worker-01的标签为：
+
+```
+kubectl label node k8s-worker-01 disktype=ssd  --overwrite
+```
+之后，就能正常的调度
+
+```
+Successfully assigned default/nginx to kind-worker-X
+```
 
 

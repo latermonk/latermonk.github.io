@@ -7,6 +7,9 @@ categories: jekyll update
 
 # kubectl skills
 
+## xx
+[https://github.com/mhausenblas/kubectl-in-action](https://github.com/mhausenblas/kubectl-in-action)
+
 
 ## important
 
