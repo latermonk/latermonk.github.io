@@ -85,10 +85,93 @@ kubectl create -f cc.yaml
 ## use
 
 
+# DEPLOYMENT
+
+## 
+
+```
+kubectl get pod nginx-7cdbd8cdc9-vfbn8 --show-labels
+
+```
+
+```
+label:  run=nginx
+
+```
+
+create a svc to expose deploy  nginx :
+
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx-svc
+  name: nginx-svc
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  type: LoadBalancer
+
+```
+
+或者：
+
+直接使用命令：
+
+```
+k expose deployment nginx --port=80  --target-port=80 --dry-run -o yaml > svc.yaml
+```
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+status:
+  loadBalancer: {}
+```
+
+然后：
+
+
+```
+kubectl apply -f nginx-svc.yaml
+
+```
 
 
 
 
+使用busybox访问：
 
+
+```
+k run b --image=busybox --restart=Never -it --rm -- /bin/sh
+```
+
+
+
+# Deployment
+
+
+
+![Deployment](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/Deployment.png)
 
 
