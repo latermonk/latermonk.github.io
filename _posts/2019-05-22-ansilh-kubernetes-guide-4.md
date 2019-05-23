@@ -4,17 +4,19 @@
 ---
 
 layout: post
-title:  " ansilh's k8s guide 4 "
+title:  " ansilh's k8s guide 5 "
 
 categories: jekyll update
 
 ---
 
 
-# PART 4
+# PART 5
 
 
-# api_reference
+# CONFIGMAPS AND SECRETS
+
+
 
 
 
