@@ -174,4 +174,8 @@ k run b --image=busybox --restart=Never -it --rm -- /bin/sh
 
 ![Deployment](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/Deployment.png)
 
+# DAEMONSETS
+
+# JOBS AND CRONJOBS
+
 
