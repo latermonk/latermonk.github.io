@@ -12,6 +12,10 @@ categories: jekyll update
 
 # ACCOUNTS AND RBACS
 
+**how k8s uses accounts and how to control resource access using RBAC**
+
+
+
 
 
 
