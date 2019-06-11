@@ -19,5 +19,15 @@ categories: jekyll update
 
 
 
+
+#  Official doc
+
+[https://github.com/kubernetes/dashboard](https://github.com/kubernetes/dashboard)
+
+[https://github.com/kubernetes/dashboard/wiki/Creating-sample-user](https://github.com/kubernetes/dashboard/wiki/Creating-sample-user)
+
+
+
+
 参考：
 [https://skyao.io/learning-kubernetes/addons/dashboard/quickstart.html](https://skyao.io/learning-kubernetes/addons/dashboard/quickstart.html)
