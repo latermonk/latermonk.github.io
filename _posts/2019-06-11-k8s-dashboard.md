@@ -17,3 +17,7 @@ categories: jekyll update
 
 [http://x.x.x.x:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy](http://x.x.x.x:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy)
 
+
+
+参考：
+[https://skyao.io/learning-kubernetes/addons/dashboard/quickstart.html](https://skyao.io/learning-kubernetes/addons/dashboard/quickstart.html)
