@@ -15,5 +15,5 @@ categories: jekyll update
 
 **访问kube-dashboard**
 
-http://x.x.x.x:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy
+[http://x.x.x.x:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy](http://x.x.x.x:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy)
 
