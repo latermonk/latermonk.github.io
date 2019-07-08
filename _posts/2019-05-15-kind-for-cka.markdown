@@ -23,12 +23,14 @@ wget   https://github.com/kubernetes-sigs/kind/releases/download/0.2.1/kind-linu
 
 mv  kind-linux-amd64   kind
 
-chmod +x   ~/go/bin/kind
+chmod +x   kind
 
 ```
 
 ```
 download config file
+
+cd /usr/local/bin
 
 wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/docs/user/kind-example-config.yaml
 
