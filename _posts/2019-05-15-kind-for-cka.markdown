@@ -28,7 +28,7 @@ chmod +x   kind
 ```
 
 ```
-download config file
+Then download config file
 
 cd /usr/local/bin
 
@@ -44,6 +44,14 @@ wget https://raw.githubusercontent.com/kubernetes-sigs/kind/master/site/content/
 kind create cluster --config kind-example-config.yaml
 
 ```
+## install kubectl
+
+```
+Install kubectl:
+
+
+```
+
 
 ## Test the cluster 
 
