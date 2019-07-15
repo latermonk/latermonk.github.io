@@ -77,6 +77,15 @@ kubectl run nginx --image=nginx
 apt install bash-completion
 ```
 
+
+```
+add kube config file:
+
+export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
+
+```
+
+
 ```
 vim ~/.bashrc
 
