@@ -49,6 +49,7 @@ kind create cluster --config kind-example-config.yaml
 ```
 Install kubectl:
 
+snap install kubectl  --classic
 
 ```
 
