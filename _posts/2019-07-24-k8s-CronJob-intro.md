@@ -30,3 +30,9 @@ the cron:
 那就是 *  */2 * * *来设置;  
 ```
 
+## cron-jobs
+
+https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
+
+
+
