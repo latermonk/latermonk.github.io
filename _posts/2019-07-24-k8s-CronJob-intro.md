@@ -34,5 +34,21 @@ the cron:
 
 https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/
 
+https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/
+
+https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
+
+
+
+
+
+
+```
+kubectl run download-kubectl --schedule="*/1 * * * *" --restart=OnFailure --image=busybox -- /bin/sh -c "cd ~;wget https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/kubectl ./"
+```
+monitor
+https://github.com/iovisor/kubectl-trace
+
+
 
 
