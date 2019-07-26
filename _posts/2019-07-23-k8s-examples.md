@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "k8s  Examples "
-date:   2019-07-24 10:07:14 +0800
+date:   2019-07-23 10:07:14 +0800
 categories: jekyll update
 ---
 #  k8s  Examples
