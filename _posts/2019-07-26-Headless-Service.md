@@ -12,4 +12,6 @@ Headless Service
 ```
 
 
+https://www.oreilly.com/library/view/kubernetes-for-developers/9781788834759/1d7b03e7-eb9b-477e-a1ab-bd11c18836ff.xhtml
+
 
