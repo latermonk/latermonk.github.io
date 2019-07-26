@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "k8s node add role"
-date:   2019-06-11 09:07:14 +0800
+date:   2019-07-04 09:07:14 +0800
 categories: jekyll update
 ---
 
