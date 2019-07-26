@@ -62,17 +62,17 @@ k run tomcat--image=tomcat--replicas=3   --port=8080  --expose
 
 
 ```
-k run nginx --image=nginx --replicas=3
+k run nginx --image=nginx  --replicas=3
 
-k run tomcat --image=nginx --replicas=3
-
-```
-
+k run tomcat --image=tomcat  --replicas=3
 
 ```
-k expose deploy nginx --name=nginx-svc  --type=ClusterIP  --port=9876 --target=80
 
-k expose deploy tomcat --name=tomcat -svc  --type=ClusterIP  --port=9876 --target=8080
+
+```
+k expose deploy nginx --name=nginx-svc  --type=ClusterIP  --port=9876 --target-port=80
+
+k expose deploy tomcat --name=tomcat-svc  --type=ClusterIP  --port=9876 --target-port=8080
 
 ```
 
