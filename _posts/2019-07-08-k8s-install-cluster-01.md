@@ -4,6 +4,8 @@ title:  "k8s install 00 - disclean and install tools "
 date:   2019-07-08 10:07:14 +0800
 categories: jekyll update
 ---
+
+
 #  k8s install 00 - disclean and install tools
 
 # CLEAN
