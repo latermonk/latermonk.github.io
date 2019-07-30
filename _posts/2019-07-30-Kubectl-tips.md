@@ -7,11 +7,11 @@ categories: jekyll update
 #  Kubectl Tips
 
 
-![k-run-01](_images/k-run-01.png)
+![k-run-01](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/k-run-01.png)
 
 
 
-![k-run-02](_images/k-run-02.png)
+![k-run-02](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/k-run-02.png)
 
 
 
