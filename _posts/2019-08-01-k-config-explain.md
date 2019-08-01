@@ -90,10 +90,10 @@ kubectl config \
 
 ```
 
-	kubectl config 
-	--kubeconfig=config-demo  set-credentials developer \
-	--client-certificate=fake-cert-file \
-	--client-key=fake-key-seefile
+kubectl config 
+--kubeconfig=config-demo  set-credentials developer \
+--client-certificate=fake-cert-file \
+--client-key=fake-key-seefile
 
 ```
 ![set-credentials](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-credentials.png)
