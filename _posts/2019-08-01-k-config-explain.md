@@ -45,6 +45,21 @@ Use "kubectl options" for a list of global command-line options (applies to all 
 
 ```
 
+Q1: kubectl config use-context  context_name , context_name 的列表如何查询？
+
+```
+直接查看 config文件 ？
+
+```
+Q2：如何在多个集群之间进行切换？
+
+
+```
+kubectl config use-context
+```
+[https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/](https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
+
+
 
 
 
