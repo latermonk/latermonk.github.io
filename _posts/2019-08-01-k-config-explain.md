@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 #  kubectl config
 
-![k-run-01](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/k-config.png)
+![k-config](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/k-config.png)
 
 
 ```
@@ -59,8 +59,20 @@ kubectl config use-context
 ```
 [https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/](https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
 
+Q3: 如何生成一个 Config 类型文件的模板 ？
 
 
+```
+todo
+```
+
+
+##  set-cluster
+
+```shell
+kubectl config --kubeconfig=config-demo set-cluster development --server=https://1.2.3.4 --certificate-authority=fake-ca-file
+```
+![set-cluster.png](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-cluster.png)
 
 
 
