@@ -7,6 +7,34 @@ categories: jekyll update
 #  imagePullPolicy
 
 
+```
+k  explain pod.spec.containers --recursive |grep imagePullPolicy
+```
+得到结果：
+
+```
+imagePullPolicy	<string>
+```
+
+
+```
+k  explain pod.spec.containers
+```
+得到结果：
+
+```
+imagePullPolicy	<string>
+     Image pull policy. 
+		One of Always, Never, IfNotPresent. 
+		Defaults to Always
+     if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated.
+     More info:
+     https://kubernetes.io/docs/concepts/containers/images#updating-images
+
+```
+
+
+## 解释
 
 ```
 --image-pull-policy=Never
