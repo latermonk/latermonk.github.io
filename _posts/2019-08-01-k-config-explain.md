@@ -72,7 +72,7 @@ todo
 ```shell
 kubectl config --kubeconfig=config-demo set-cluster development --server=https://1.2.3.4 --certificate-authority=fake-ca-file
 ```
-![set-cluster.png](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-cluster.png)
+![set-cluster](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-cluster.png)
 
 
 
