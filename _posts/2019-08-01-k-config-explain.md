@@ -6,6 +6,10 @@ categories: jekyll update
 ---
 #  kubectl config
 
+[https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/](https://kubernetes.io/zh/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)
+
+
+
 ![k-config](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/k-config.png)
 
 
