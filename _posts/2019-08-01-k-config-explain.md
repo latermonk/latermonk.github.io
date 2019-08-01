@@ -71,8 +71,8 @@ todo
 
 ```shell
 
-kubectl config --kubeconfig=config-demo \
-set-cluster development \
+kubectl config \
+--kubeconfig=config-demo set-cluster development \
 --server=https://1.2.3.4 \
 --certificate-authority=fake-ca-file
 
@@ -82,4 +82,22 @@ set-cluster development \
 
 
 
+## set 
 
+```
+
+	kubectl config 
+	--kubeconfig=config-demo  set-credentials developer \
+	--client-certificate=fake-cert-file \
+	--client-key=fake-key-seefile
+
+```
+
+
+## set-context
+
+
+```
+kubectl config --kubeconfig=config-demo set-credentials developer --client-certificate=fake-cert-file --client-key=fake-key-seefile
+```
+![set-credentials](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-credentials.png)
