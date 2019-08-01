@@ -82,7 +82,7 @@ kubectl config \
 
 
 
-## set 
+## set  credentials 
 
 ```
 
@@ -92,12 +92,23 @@ kubectl config \
 	--client-key=fake-key-seefile
 
 ```
+![set-credentials](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-credentials.png)
+
 
 
 ## set-context
 
 
 ```
-kubectl config --kubeconfig=config-demo set-credentials developer --client-certificate=fake-cert-file --client-key=fake-key-seefile
+kubectl config 
+--kubeconfig=config-demo \
+set-context dev-frontend \
+--cluster=development \
+--namespace=frontend \
+--user=developer
 ```
-![set-credentials](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-credentials.png)
+
+![set-context](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/set-context.png)
+
+
+
