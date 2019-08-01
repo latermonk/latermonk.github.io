@@ -105,8 +105,7 @@ kubectl config
 
 ```
 kubectl config 
---kubeconfig=config-demo \
-set-context dev-frontend \
+--kubeconfig=config-demo  set-context dev-frontend \
 --cluster=development \
 --namespace=frontend \
 --user=developer
