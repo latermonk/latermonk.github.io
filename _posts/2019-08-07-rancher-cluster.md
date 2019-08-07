@@ -52,3 +52,26 @@ Open Web-UI and setup the k8s-cluster
 
 
 
+
+#  Deploy sock-shop 
+
+
+##  git clone
+
+
+```
+https://github.com/microservices-demo/microservices-demo.git  
+
+
+
+```
+##  Deploy
+
+
+```
+kubectl create namespace sock-shop
+
+kubectl apply -f complete-demo.yaml
+```
+
+
