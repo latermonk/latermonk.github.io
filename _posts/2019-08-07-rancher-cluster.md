@@ -51,6 +51,8 @@ Open Web-UI and setup the k8s-cluster
 
 
 
+--------
+
 
 
 #  Deploy sock-shop 
