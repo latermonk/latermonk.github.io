@@ -50,11 +50,6 @@ docker run -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
 Open Web-UI and setup the k8s-cluster
 
 
-
---------
-
-
-
 #  Deploy sock-shop 
 
 
