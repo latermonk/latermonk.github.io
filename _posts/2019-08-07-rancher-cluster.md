@@ -75,3 +75,11 @@ kubectl apply -f complete-demo.yaml
 ```
 
 
+![sock-shop](_images/sock-shop.png)
+
+
+![sock-shop-ui](_images/sock-shop-ui.png)
+
+
+
+
