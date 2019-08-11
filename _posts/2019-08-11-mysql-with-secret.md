@@ -53,6 +53,14 @@ spec:
 status: {}
 
 ```
+**check**
+
+
+```
+kubectl exec -it nginx /bin/bash
+ls /etc/foo  # shows username
+cat /etc/foo/username # shows admin
+```
 
 
 #   mount the variable 'username' from secret mysecret2 onto a new nginx pod in env variable called 'USERNAME'
@@ -82,5 +90,11 @@ spec:
   restartPolicy: Never
 status: {}
 
+```
+**check**
+
+
+```
+k exec  nginx-nginx -- env|grep USERNAME
 ```
 
