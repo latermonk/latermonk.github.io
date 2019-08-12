@@ -76,7 +76,5 @@ cat /etc/foo/passwd
 
 
 
-#  pv,pvc
-
 
 
