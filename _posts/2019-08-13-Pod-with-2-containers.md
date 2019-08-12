@@ -101,3 +101,5 @@ Events:
 另外从DashBoard也可以看出来。
 
 
+![Pod-with-2-Containers](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/Pod-with-2-Containers.png)
+
