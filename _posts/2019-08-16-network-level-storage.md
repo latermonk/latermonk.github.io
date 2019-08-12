@@ -1,16 +1,12 @@
 ---
 layout: post
-title:  " HostPath  "
-date:   2019-08-14 10:07:14 +0800
+title:  "  network level  storage   "
+date:   2019-08-16 10:07:14 +0800
 categories: jekyll update
 ---
-# HostPath
-
+#  network level  storage
 
 
 ![volume](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/volume.png)
-
-
-
 
 

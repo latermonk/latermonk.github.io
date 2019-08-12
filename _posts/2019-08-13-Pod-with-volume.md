@@ -7,6 +7,10 @@ categories: jekyll update
 #  Pod with volumes
 
 
+![volume](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/volume.png)
+
+
+
 #  emptyDir  --  Pod内容器之间共享Volume
 
 
