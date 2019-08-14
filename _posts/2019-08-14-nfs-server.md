@@ -43,7 +43,7 @@ apt install nfs-common
 ```
 showmount -e  NFS_SERVER_IP
 ```
-
+**Linux**
 ```
 mount  NFS_IP:/opt/sfw    /mnt
 
@@ -52,5 +52,14 @@ ls -l /mnt
 
 
 cat  /mnt/hello.txt
+```
+**win10**
+
+```
+showmount -e  NFS_SERVER_IP
+
+mount  NFS_IP:/opt/sfw    Z:
+
+
 ```
 
