@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " clusterrole-and-binding  "
+title:  "  service account  "
 date:   2019-08-20 10:07:14 +0800
 categories: jekyll update
 ---
