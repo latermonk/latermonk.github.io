@@ -20,12 +20,5 @@ user是外部系统管理的，而Pod则使用**serviceaccount**来作为认证�
 - 多个Pod可以共用一个serviceaccount
 - 一个namespace中的Pod无法使用 另外一个namespace中的serviceaccount
 
- 
 
-
-
-
-
----------------
-![rolebing00.png](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/rolebing00.png)
 
