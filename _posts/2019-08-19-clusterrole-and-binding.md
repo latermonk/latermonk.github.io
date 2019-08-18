@@ -6,6 +6,7 @@ categories: jekyll update
 ---
 # clusterrole-and-binding
 
+![rolebing00.png](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/rolebing00.png)
 
 
 ![sa-luster-role.png](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/sa-luster-role.png)
