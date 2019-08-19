@@ -15,7 +15,7 @@ role-01
 
 
 
-![role-01](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/role-01)
+![role-01](https://raw.githubusercontent.com/latermonk/latermonk.github.io/master/_posts/_images/role-01.png)
 
 
 **用户和serviceccount 如何和动作建立关联？**
