@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "  CKA CERT  "
+title:  "  CKA "
 date:   2019-09-08 10:07:14 +0800
 categories: jekyll update
 ---
@@ -8,7 +8,7 @@ categories: jekyll update
 
 
 ```
-Finnaly, got my cka pass .
+ got my cka certification.
 ```
 
 
